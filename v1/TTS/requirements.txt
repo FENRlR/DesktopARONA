@@ -1,0 +1,10 @@
+Cython==0.29.21
+
+librosa==0.8.0
+phonemizer==2.2.1
+tensorboard==2.3.0
+Unidecode==1.1.1
+pysoundfile==0.9.0.post1
+pyopenjtalk==0.2.0
+jamo==0.4.1
+ko_pron==1.3
