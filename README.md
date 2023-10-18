@@ -43,7 +43,9 @@ Base : Python - kobart or polyglot
 
   EleutherAI's [polyglot-ko-1.3b](https://huggingface.co/EleutherAI/polyglot-ko-1.3b) finetuned with datasets of [KoAlpaca](https://github.com/Beomi/KoAlpaca).
   
-  Slow, even with time limits. Can be better if you have a modern gpu ~~(probably better than my old 970m)~~. Takes a lot of Vram - can be better if you use qlora.
+  Slow, even with time limits - can be better if you have a modern gpu ~~(probably better than my old 970m)~~.
+
+  Takes a lot of Vram - can be better if you use qlora.
   
   To make it work on windows OS, you need bitsandbytes modified for windows and some additional struggles for manual dtype allocations by opening up the library and fixing it.
 
