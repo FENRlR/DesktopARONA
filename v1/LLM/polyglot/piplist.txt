@@ -1,0 +1,17 @@
+# pip install -q -U bitsandbytes
+pip install https://github.com/acpopescu/bitsandbytes/releases/download/v0.38.0-win0/bitsandbytes-0.38.1-py3-none-any.whl
+# pip install git+https://github.com/stoperro/bitsandbytes_windows.git@cmake_windows
+# pip install git+https://github.com/acpopescu/bitsandbytes.git@cmake_windows
+
+pip install -q -U git+https://github.com/huggingface/transformers.git
+pip install -q -U git+https://github.com/huggingface/peft.git
+pip install -q -U git+https://github.com/huggingface/accelerate.git
+pip install -q datasets
+pip install requests
+pip install -q scipy
+
+# CUDA 11.6
+#pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+
+# 11.7
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
