@@ -57,7 +57,7 @@ Base : Python - [mb-istft-vits-multilingual](https://github.com/misakiudon/MB-iS
 ### - Translator
 Base : Python - ezTransWeb-omni
 
-There are some clumsy requriements for this. Please refer to https://github.com/FENRlR/ezTransWeb-omni.
+There are some clumsy requirements for this. Please refer to https://github.com/FENRlR/ezTransWeb-omni.
 
 
 ## Limitations
