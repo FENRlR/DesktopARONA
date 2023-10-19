@@ -37,7 +37,7 @@ Base : Python - kobart or polyglot
 
   Fast, but generates a fixed answer for a given sentence (encoder-decoder).
   
-  To make it work on windows OS you need to solve an error (as far as I remember, that was something related to type conversion in torch).
+  To make it work on windows OS, you need to solve an error (as far as I remember, that was something related to type conversion in torch).
   
 - polyglot
 
