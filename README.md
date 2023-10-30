@@ -83,4 +83,4 @@ Targeted screen size : 1080p
 
 ## Limitations 
 - GPU usage goes up and hits nearly 50% in GTX970m when monitored with task manager, despite of the actual usage of ~14%
-- Not stable (at least in my system) - excution of other programs makes it disappear for unknown reason
+- Not stable (at least in my system) - execution of other programs makes it disappear for unknown reason
