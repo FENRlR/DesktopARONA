@@ -82,5 +82,5 @@ Targeted screen size : 1080p
 - STT (not my style but if needed)
 
 ## Limitations 
-- GPU usage goes up and hits nearly 50% in GTX970m when monitored with task manager, despite of the actual usage of ~14%
+- [GPU usage goes up and hits nearly 50% in GTX970m(and 30% with RTX4060ti - half of it comes from dwm) when monitored with task manager, despite of the actual usage of ~14% from gpu profiler.](https://github.com/dotnet/wpf/issues/5222)
 - Not stable (at least in my system) - execution of other programs makes it disappear for unknown reason
