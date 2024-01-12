@@ -74,7 +74,7 @@ Base : C# - SpineViewerWPF
 
 Targeted screen size : 1080p
 
-※ **WIP** - now with correct representation of PMA but I have to reconstruct it all the way up again...
+※ **WIP** - now with correct representation of PMA. 90% done
 ## Plans
 - Customized language model with emotion embeddings 
 - Lipsync options (in-game style amplitude based vs freq based)
@@ -82,5 +82,5 @@ Targeted screen size : 1080p
 - STT (not my style but if needed)
 
 ## Limitations 
-- [GPU usage goes up and hits nearly 50% in GTX970m(and 30% with RTX4060ti - half of it comes from dwm) when monitored with task manager, despite of the actual usage of ~14% from gpu profiler.](https://github.com/dotnet/wpf/issues/5222)
-- Not stable (at least in my system) - execution of other programs makes it disappear for unknown reason
+- [GPU usage goes up and hits nearly 50% in GTX970m(and 30% with RTX4060ti - half of it comes from dwm) when monitored with task manager, despite of the actual usage of ~14% from gpu profiler](https://github.com/dotnet/wpf/issues/5222)
+- Not stable (at least in my system) - Turns out to be an overflow exception that comes from a mysterious infinite loop of mixblend while applying a state to the skeleton. Disabling it suppressed the issue, but I would not call this an ideal solution.
