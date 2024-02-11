@@ -19,7 +19,7 @@ Demonstration of v1 with polyglot module.
 ### - Shell
 ![v1test.gif](resources/v1test.gif)
 
-Base : Java - libgdx spine runtime
+Base : Java - [libgdx spine runtime](https://github.com/EsotericSoftware/spine-runtimes)
 
 Targeted screen size : 1080p
 
@@ -70,11 +70,14 @@ There are some clumsy requirements for this. Please refer to https://github.com/
 ### - Shell
 ![v2prototype.gif](resources/v2prototype.gif)
 
-Base : C# - SpineViewerWPF
+Base : C# - [SpineViewerWPF](https://github.com/kiletw/SpineViewerWPF)
 
 Targeted screen size : 1080p
 
-※ **WIP** - now with correct representation of PMA. 90% done
+Get a copy of the spine model from somewhere else, then place it to `./aronares/arona`.
+
+※ **WIP** - now with correct representation of PMA.
+
 ## Plans
 - Customized language model with emotion embeddings 
 - Lipsync options (in-game style amplitude based vs freq based)
