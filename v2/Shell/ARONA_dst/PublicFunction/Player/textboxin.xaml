@@ -1,0 +1,25 @@
+﻿<Window x:Class="ARONA_dst.PublicFunction.Player.textboxin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ARONA_dst.PublicFunction.Player"
+        mc:Ignorable="d"
+        Title="textboxin" Width="1116" Height="81" 
+        AllowsTransparency="True" WindowStyle="None">
+
+    <Window.Resources>
+        <FontFamily x:Key="MyFont">pack://application:Fonts/#GyeonggiTitle Medium</FontFamily>
+    </Window.Resources>
+
+    <Grid>
+        <Image Source="\Resources\tdialog.png" />
+        <TextBox Name="Textinputbox" Width="1116" Height="81" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" 
+                 FontFamily="GyeonggiTitle Medium" FontSize="36" FontWeight="Normal"
+                 KeyDown="TextBox_KeyDown" TextAlignment="Center" Padding="0,25,0,0" Foreground="#29415a"
+                 />
+    </Grid>
+
+    
+
+</Window>
