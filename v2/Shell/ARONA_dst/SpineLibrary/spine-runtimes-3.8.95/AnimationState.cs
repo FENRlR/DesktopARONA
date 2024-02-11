@@ -233,7 +233,7 @@ namespace Spine3_8_95 {
 				// Apply mixing from entries first.
 				float mix = current.alpha;
 				if (current.mixingFrom != null)
-					mix *= ApplyMixingFrom(current, skeleton, blend); // <- ¿À¹öÇÃ·Î¿ì ÁöÁ¡
+					mix *= ApplyMixingFrom(current, skeleton, blend); // <- ï¿½ï¿½ï¿½ï¿½ï¿½Ã·Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½
 				else if (current.trackTime >= current.trackEnd && current.next == null) //
 					mix = 0; // Set to setup pose the last time the entry will be applied.
 
@@ -296,8 +296,7 @@ namespace Spine3_8_95 {
 
 		private float ApplyMixingFrom (TrackEntry to, Skeleton skeleton, MixBlend blend) {
 			TrackEntry from = to.mixingFrom;
-            //@note TODO
-            if (from.mixingFrom != null) ApplyMixingFrom(from, skeleton, blend); // <- ¿À¹öÇÃ·Î¿ì ÁöÁ¡
+            if (from.mixingFrom != null) ApplyMixingFrom(from, skeleton, blend);
 
             float mix;
 			if (to.mixDuration == 0) { // Single frame mix to undo mixingFrom changes.
@@ -311,7 +310,7 @@ namespace Spine3_8_95 {
 
 			var eventBuffer = mix < from.eventThreshold ? this.events : null;
 			bool attachments = mix < from.attachmentThreshold, drawOrder = mix < from.drawOrderThreshold;
-			float animationLast = from.animationLast, animationTime = from.AnimationTime; // <- ¿¡·¯ÁöÁ¡
+			float animationLast = from.animationLast, animationTime = from.AnimationTime; // <- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			var timelines = from.animation.timelines;
 			int timelineCount = timelines.Count;
 			var timelinesItems = timelines.Items;
@@ -1021,8 +1020,8 @@ namespace Spine3_8_95 {
 		/// </summary>
 		public float AnimationTime {
             //Process is terminated due to StackOverflowException.
-            //Ã³¸®µÇÁö ¾ÊÀº 'System.StackOverflowException' Çü½ÄÀÇ ¿¹¿Ü°¡ SpineViewerWPF.exe¿¡¼­ ¹ß»ýÇß½À´Ï´Ù.
-			get {//<- Á¤È®Èù ÀÌ ÁöÁ¡
+            //Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 'System.StackOverflowException' ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ü°ï¿½ SpineViewerWPF.exeï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½.
+			get {//<- ï¿½ï¿½È®ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				if (loop) {
 					float duration = animationEnd - animationStart;
 					if (duration == 0)
