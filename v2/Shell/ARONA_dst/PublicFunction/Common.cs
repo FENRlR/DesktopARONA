@@ -2,12 +2,6 @@
 using Microsoft.Win32;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Formats.Gif;
-//using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.PixelFormats;
-using SixLabors.ImageSharp.Processing;
-//using SpineViewerWPF;
 using System;
 using System.Collections.Generic;
 using System.Drawing;

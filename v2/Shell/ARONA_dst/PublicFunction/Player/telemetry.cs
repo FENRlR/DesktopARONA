@@ -19,18 +19,16 @@ namespace ARONA_dst.PublicFunction.Player
         {
             try
             {
+                TcpClient soc = new TcpClient();
                 while (runswit == 1)
                 {
                     if (!App.ctxt.Equals("") && App.msgontherocks == 0)
                     {
-                        TcpClient soc = new TcpClient();
                         soc.Connect("127.0.0.1", 47966);
-
 
                         NetworkStream networkStream = soc.GetStream();
                         StreamReader rin = new StreamReader(networkStream, Encoding.UTF8);
                         StreamWriter wout = new StreamWriter(networkStream, Encoding.UTF8);
-
 
                         wout.Write(App.ctxt);
                         wout.Flush();
@@ -61,6 +59,8 @@ namespace ARONA_dst.PublicFunction.Player
                         soc.Close();
 
                     }
+
+                    Thread.Sleep(132);
 
                 }
             }
