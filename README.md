@@ -35,7 +35,7 @@ Base : Python - kobart or polyglot
 
   Finetuned KoBART from [KoBART-chatbot](https://github.com/haven-jeon/KoBART-chatbot).
 
-  Fast, but generates a fixed answer for a given sentence (encoder-decoder).
+  Fast, but generates a fixed answer for a given sentence.
   
   To make it work on windows OS, you need to solve an error (as far as I remember, that was something related to type conversion in torch).
   
@@ -43,7 +43,7 @@ Base : Python - kobart or polyglot
 
   EleutherAI's [polyglot-ko-1.3b](https://huggingface.co/EleutherAI/polyglot-ko-1.3b) finetuned with datasets of [KoAlpaca](https://github.com/Beomi/KoAlpaca).
   
-  Slow, even with time limits - can be better if you have a modern gpu ~~(probably better than my old 970m)~~. Also takes a lot of Vram.
+  Slow, even with time limits - can be better if you have a modern gpu ~~(probably better than my old 970m)~~ and takes a lot of Vram.
   
   To make it work on windows OS, you need bitsandbytes modified for windows and some additional struggles for manual dtype allocations by opening up the library and fixing it.
 
@@ -86,4 +86,3 @@ Get a copy of the spine model from somewhere else, then place it to `./aronares/
 
 ## Limitations 
 - [GPU usage goes up and hits nearly 50% in GTX970m(and 30% with RTX4060ti - half of it comes from dwm) when monitored with task manager, despite of the actual usage of ~14% from gpu profiler](https://github.com/dotnet/wpf/issues/5222)
-- Not stable (at least in my system) - Turns out to be an overflow exception that comes from a mysterious infinite loop of mixblend while applying a state to the skeleton. Disabling it suppressed the issue, but I would not call this an ideal solution.
